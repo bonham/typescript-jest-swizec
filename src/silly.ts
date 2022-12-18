@@ -1,3 +1,10 @@
-export function sillyFunction() {
-  return 4 // chosen by fair dice throw, guaranteed to be random
+import { myname } from "./mymod"
+
+export function sillyFunction(): string {
+  var name :string = myname()
+  return name
 }
+
+let x = sillyFunction()
+console.log("hi")
+console.log(x)
